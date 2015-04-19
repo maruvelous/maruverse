@@ -1,15 +1,12 @@
---
+---
 layout: default
-title: About the Maruverse!
---
+title: Updates from the Maruverse!
+---
+	<h1>{{ page.title }}</h1>
+	<ul class="posts">
 
-	<div class="about">
-		<h1>About the Maruverse!</h1>
-		<p>The <b>Maruverse</b> is a hub for original characters and storylines created by <a href="http://about.me/maruvelous/">Maru</a>,</b> an internet personality of various talents.</p>
-		<p>More information will be added in due time.</p>
+	  {% for post in site.posts %}
+	    <li><span>{{ post.date | date_to_string }}</span> » <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+	  {% endfor %}
+	</ul>
 
-		<ul class="contacts">
-			<li><a href="http://twitter.com/me0wru">@ME0WRU</a></li>
-			<li><a href="http://mmmaaarrruuu.tumblr.com/">mmmaaarrruuu on Tumblr</a></li>
-			</ul>
-	</div>
