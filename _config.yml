@@ -1,3 +1,4 @@
 name: Welcome to the Maruverse!
 markdown: kramdown
 baseurl: /maruverse
+permalink: /blog/:year/:month/:day/:title
